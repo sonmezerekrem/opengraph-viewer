@@ -31,7 +31,6 @@ export default function Card() {
                 .then(data => {
                     if (data.success) {
                         setError("")
-                        console.log(data.result)
                         setOpenGraph({Success: data.success, Data: data.result})
                     } else {
                         setError("Invalid URL")
@@ -41,6 +40,9 @@ export default function Card() {
                 setError("Invalid URL")
                 setOpenGraph({Success: false, Data: {}})
             })
+        } else {
+            setError("")
+            setOpenGraph({Success: false, Data: {}})
         }
     }, [url])
 
