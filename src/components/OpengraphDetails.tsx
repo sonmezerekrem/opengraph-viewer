@@ -14,7 +14,7 @@ export default function OpengraphDetails({data}: { data: OgObject }) {
                 onClick={() => {
                     setSeeFullDetail(!seeFullDetail)
                 }}
-                className={"bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 mb-2"}>See Full
+                className={"bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 mb-2 outline-none"}>See Full
                 Detail
             </button>
             {seeFullDetail &&
